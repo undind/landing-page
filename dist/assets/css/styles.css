@@ -15383,6 +15383,11 @@ li {
   padding-top: 80px;
 }
 
+section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
 .animated {
   -webkit-animation-duration: 0.5s;
   animation-duration: 0.5s;
@@ -15691,4 +15696,9 @@ li {
   opacity: 0.8;
   background-color: #2e2f30;
   z-index: 1060;
+}
+
+.section__slider .carousel-inner {
+  -webkit-box-shadow: 0 14px 48px 0 rgba(3, 33, 40, 0.6);
+  box-shadow: 0 14px 48px 0 rgba(3, 33, 40, 0.6);
 }
