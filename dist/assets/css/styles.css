@@ -15344,6 +15344,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+body.open {
+  overflow: hidden;
+}
+
 table {
   font-family: 'Helvetica Neue', Arial, sans-serif;
   font-size: 16px;
@@ -15547,22 +15551,6 @@ li {
     -webkit-transform-origin: left center;
     transform-origin: left center;
   }
-  .navbar .navbar-toggler.show #nav-icon span:nth-child(1) {
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg);
-    top: 2px;
-    left: 3px;
-  }
-  .navbar .navbar-toggler.show #nav-icon span:nth-child(2) {
-    width: 0%;
-    opacity: 0;
-  }
-  .navbar .navbar-toggler.show #nav-icon span:nth-child(3) {
-    -webkit-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-    top: 16px;
-    left: 3px;
-  }
 }
 
 .navbar-responsive {
@@ -15589,6 +15577,7 @@ li {
 }
 
 .navbar-responsive .navbar-container {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -15608,6 +15597,9 @@ li {
 
 .navbar-responsive .navbar-container .navbar-header .navbar-logo {
   text-align: center;
+  color: #057389;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
 }
 
 .navbar-responsive .navbar-container .navbar-header .navbar-logo .logo-img {
@@ -15617,6 +15609,26 @@ li {
 .navbar-responsive .navbar-container .navbar-header .navbar-logo .navbar-title {
   font-size: 16px;
   font-weight: 600;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+.navbar-responsive .navbar-container .navbar-header .navbar-logo:hover {
+  text-decoration: none;
+}
+
+.navbar-responsive .navbar-container .navbar-header .navbar-logo:hover .navbar-title {
+  opacity: 0.8;
+}
+
+.navbar-responsive .navbar-container .navbar-toggler-close {
+  position: absolute;
+  top: 19px;
+  right: -80px;
+}
+
+.navbar-responsive .navbar-container .navbar-toggler-close svg {
+  fill: #fff;
 }
 
 .navbar-responsive .navbar-nav {
@@ -15668,4 +15680,15 @@ li {
   width: 100%;
   top: 25px;
   background-color: #85a1c1;
+}
+
+.navbar-backdrop {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  opacity: 0.8;
+  background-color: #2e2f30;
+  z-index: 1060;
 }

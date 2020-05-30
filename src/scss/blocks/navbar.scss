@@ -108,27 +108,6 @@
             -ms-transform-origin: left center;
             transform-origin: left center;
         }
-
-        .navbar-toggler.show #nav-icon span:nth-child(1) {
-            -webkit-transform: rotate(45deg);
-            -ms-transform: rotate(45deg);
-            transform: rotate(45deg);
-            top: 2px;
-            left: 3px;
-        }
-
-        .navbar-toggler.show #nav-icon span:nth-child(2) {
-            width: 0%;
-            opacity: 0;
-        }
-
-        .navbar-toggler.show #nav-icon span:nth-child(3) {
-            -webkit-transform: rotate(-45deg);
-            -ms-transform: rotate(-45deg);
-            transform: rotate(-45deg);
-            top: 16px;
-            left: 3px;
-        }
     }
 }
 
@@ -147,6 +126,7 @@
     box-shadow: 2px 0 4px 0 rgba(3, 33, 40, 0.02);
 
     .navbar-container {
+        position: relative;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -157,15 +137,36 @@
 
             .navbar-logo {
                 text-align: center;
-    
+                color: #057389;
+                transition: all 0.25s;
+
                 .logo-img {
                     margin: 0 auto;
                 }
-    
+
                 .navbar-title {
                     font-size: 16px;
                     font-weight: 600;
+                    transition: all 0.25s;
                 }
+
+                &:hover {
+                    text-decoration: none;
+
+                    .navbar-title {
+                        opacity: 0.8;
+                    }
+                }
+            }
+        }
+
+        .navbar-toggler-close {
+            position: absolute;
+            top: 19px;
+            right: -80px;
+
+            svg {
+                fill: #fff;
             }
         }
     }
@@ -213,4 +214,15 @@
             }
         }
     }
+}
+
+.navbar-backdrop {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    opacity: 0.8;
+    background-color: #2e2f30;
+    z-index: 1060;
 }

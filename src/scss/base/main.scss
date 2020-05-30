@@ -11,6 +11,10 @@ body {
     background-color: $dark-white;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+
+    &.open {
+        overflow: hidden;
+    }
 }
 
 table {
