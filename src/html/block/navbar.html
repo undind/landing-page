@@ -1,22 +1,30 @@
 <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container-lg">
         <a class="navbar-brand" href="#"><img src="./assets/img/logo/logo.svg" alt="Logo" /></a>
-        <button
-            id="navbar-button"
-            class="navbar-toggler"
-            type="button"
-        >
-            <div id="nav-icon" class="collapse"> 
-                <span></span> 
-                <span></span> 
+        <button id="navbar-button" class="navbar-toggler" type="button">
+            <div id="nav-icon" class="collapse">
+                <span></span>
+                <span></span>
                 <span></span>
             </div>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">О больнице</span></a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link active dropdown-toggle" href="#" data-toggle="dropdown">О больнице</a>
+                    <div class="dropdown-menu fade-down">
+                        <a class="dropdown-item active" href="#">Основная информация</a>
+                        <a class="dropdown-item" href="#">Основные отделения</a>
+                        <a class="dropdown-item" href="#">Структура и органы управления</a>
+                        <a class="dropdown-item" href="#">Информация о государственном задании</a>
+                        <a class="dropdown-item" href="#">Кодекс этики и служебного поведения работников</a>
+                        <a class="dropdown-item" href="#">Вакансии</a>
+                        <a class="dropdown-item" href="#">Виды оказываемой медицинской помощи</a>
+                        <a class="dropdown-item" href="#">Лицензии/Свидетельства</a>
+                        <a class="dropdown-item" href="#">Полезные ссылки</a>
+                        <a class="dropdown-item" href="#">Сводная ведомость результатов оценки условий труда</a>
+                    </div>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Новости</a>
@@ -24,14 +32,45 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#">Статьи</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Наши специалисты</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Наши специалисты</a>
+                    <div class="dropdown-menu fade-down">
+                        <a class="dropdown-item" href="#">Персонал</a>
+                        <a class="dropdown-item" href="#">Администрация</a>
+                        <a class="dropdown-item" href="#">Заведующие отделениями</a>
+                    </div>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Услуги</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Услуги</a>
+                    <div class="dropdown-menu fade-down">
+                        <a class="dropdown-item" href="#">Все услуги</a>
+                        <a class="dropdown-item" href="#">Наши направления</a>
+                        <a class="dropdown-item" href="#">Платные услуги</a>
+                        <a class="dropdown-item" href="#">Образец договора на предоставление платных услуг</a>
+                        <a class="dropdown-item" href="#">Правила предоставления платных медицинских услуг</a>
+                        <a class="dropdown-item" href="#"
+                            >О порядке и условиях предоставления платных мед-услуг №45 от 26.01.2015</a
+                        >
+                        <a class="dropdown-item" href="#"
+                            >Перечень услуг, предоставляемых в рамках межучрежденческих расчетов</a
+                        >
+                    </div>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Пациентам</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Пациентам</a>
+                    <div class="dropdown-menu dropdown-menu-right fade-down">
+                        <a class="dropdown-item" href="#">Независимая оценка ГБУЗ С "ГОРБОЛЬНИЦА № 5 - "ЦОЗМИР"</a>
+                        <a class="dropdown-item" href="#">Информационные ролики и Инфографика</a>
+                        <a class="dropdown-item" href="#">О порядке ввоза лекарственных средств</a>
+                        <a class="dropdown-item" href="#">Условия оказания бесплатной медицинской помощи</a>
+                        <a class="dropdown-item" href="#">Графики приема граждан</a>
+                        <a class="dropdown-item" href="#">Задать вопрос</a>
+                        <a class="dropdown-item" href="#">Запись на прием к врачу</a>
+                        <a class="dropdown-item" href="#">Нормативная Документация</a>
+                        <a class="dropdown-item" href="#">Информация о страховых медицинских компаниях</a>
+                        <a class="dropdown-item" href="#">Памятки и Методические рекомендации</a>
+                        <a class="dropdown-item" href="#">Перечни заболеваний</a>
+                    </div>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Контакты</a>
@@ -50,8 +89,29 @@
             </a>
         </div>
         <ul class="navbar-nav">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">О больнице</span></a>
+            <li class="nav-item dropdown">
+                <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="dropdown01"
+                    data-toggle="collapse"
+                    data-target="#dd1"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    >О больнице</a
+                >
+                <div class="dropdown-menu p-0 collapse" aria-labelledby="dropdown01" id="dd1">
+                    <a class="dropdown-item active" href="#">Основная информация</a>
+                    <a class="dropdown-item" href="#">Основные отделения</a>
+                    <a class="dropdown-item" href="#">Структура и органы управления</a>
+                    <a class="dropdown-item" href="#">Информация о государственном задании</a>
+                    <a class="dropdown-item" href="#">Кодекс этики и служебного поведения работников</a>
+                    <a class="dropdown-item" href="#">Вакансии</a>
+                    <a class="dropdown-item" href="#">Виды оказываемой медицинской помощи</a>
+                    <a class="dropdown-item" href="#">Лицензии/Свидетельства</a>
+                    <a class="dropdown-item" href="#">Полезные ссылки</a>
+                    <a class="dropdown-item" href="#">Сводная ведомость результатов оценки условий труда</a>
+                </div>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Новости</a>
@@ -59,21 +119,79 @@
             <li class="nav-item">
                 <a class="nav-link" href="#">Статьи</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Наши специалисты</a>
+            <li class="nav-item dropdown">
+                <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="dropdown02"
+                    data-toggle="collapse"
+                    data-target="#dd2"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    >Наши специалисты</a
+                >
+                <div class="dropdown-menu p-0 collapse" aria-labelledby="dropdown02" id="dd2">
+                    <a class="dropdown-item" href="#">Персонал</a>
+                    <a class="dropdown-item" href="#">Администрация</a>
+                    <a class="dropdown-item" href="#">Заведующие отделениями</a>
+                </div>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Услуги</a>
+            <li class="nav-item dropdown">
+                <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="dropdown03"
+                    data-toggle="collapse"
+                    data-target="#dd3"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    >Услуги</a
+                >
+                <div class="dropdown-menu p-0 collapse" aria-labelledby="dropdown03" id="dd3">
+                    <a class="dropdown-item" href="#">Все услуги</a>
+                    <a class="dropdown-item" href="#">Наши направления</a>
+                    <a class="dropdown-item" href="#">Платные услуги</a>
+                    <a class="dropdown-item" href="#">Образец договора на предоставление платных услуг</a>
+                    <a class="dropdown-item" href="#">Правила предоставления платных медицинских услуг</a>
+                    <a class="dropdown-item" href="#"
+                        >О порядке и условиях предоставления платных мед-услуг №45 от 26.01.2015</a
+                    >
+                    <a class="dropdown-item" href="#"
+                        >Перечень услуг, предоставляемых в рамках межучрежденческих расчетов</a
+                    >
+                </div>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Пациентам</a>
+            <li class="nav-item dropdown">
+                <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="dropdown04"
+                    data-toggle="collapse"
+                    data-target="#dd4"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    >Пациентам</a
+                >
+                <div class="dropdown-menu p-0 collapse" aria-labelledby="dropdown04" id="dd4">
+                    <a class="dropdown-item" href="#">Независимая оценка ГБУЗ С "ГОРБОЛЬНИЦА № 5 - "ЦОЗМИР"</a>
+                    <a class="dropdown-item" href="#">Информационные ролики и Инфографика</a>
+                    <a class="dropdown-item" href="#">О порядке ввоза лекарственных средств</a>
+                    <a class="dropdown-item" href="#">Условия оказания бесплатной медицинской помощи</a>
+                    <a class="dropdown-item" href="#">Графики приема граждан</a>
+                    <a class="dropdown-item" href="#">Задать вопрос</a>
+                    <a class="dropdown-item" href="#">Запись на прием к врачу</a>
+                    <a class="dropdown-item" href="#">Нормативная Документация</a>
+                    <a class="dropdown-item" href="#">Информация о страховых медицинских компаниях</a>
+                    <a class="dropdown-item" href="#">Памятки и Методические рекомендации</a>
+                    <a class="dropdown-item" href="#">Перечни заболеваний</a>
+                </div>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Контакты</a>
             </li>
         </ul>
 
-        <button type="button" class="navbar-toggler navbar-toggler-close hidden">
+        <button title="Close sidebar" type="button" class="navbar-toggler navbar-toggler-close hidden">
             <svg height="32" width="32">
                 <use xlink:href="./assets/img/svg/sprite.svg#close" />
             </svg>
