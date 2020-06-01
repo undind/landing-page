@@ -3,6 +3,11 @@ $(document).ready(function () {
     var hamburgerButton = $('#navbar-button');
     var navbarBackdrop = $('.navbar-backdrop');
     var navbarClose = $('.navbar-toggler-close');
+    //Dropdown navbar
+    var dropdown = $('.dropdown-hovered');
+    var dropdownToggle = $('#dropdow-main-toggle');
+    var dropdownMenu = $('#dropdown-main-menu');
+    var showClass = 'show';
 
     function showMenu() {
         hamburgerMenu.addClass('fadeIn');
@@ -51,27 +56,24 @@ $(document).ready(function () {
     });
 
     //Dropdown navbar
-    var $dropdown = $('.dropdown-hovered');
-    var $dropdownToggle = $('#dropdow-main-toggle');
-    var $dropdownMenu = $('#dropdown-main-menu');
-    var showClass = 'show';
-
     $(window).on('load resize', function () {
         if (this.matchMedia('(min-width: 992px)').matches) {
-            $dropdown.hover(
+            dropdown.hover(
                 function () {
                     var $this = $(this);
                     $this.addClass(showClass);
-                    $this.find($dropdownToggle).attr('aria-expanded', 'true');
-                    $this.find($dropdownMenu).addClass(showClass);
+                    $this.find(dropdownToggle).attr('aria-expanded', 'true');
+                    $this.find(dropdownMenu).addClass(showClass);
                 },
                 function () {
                     var $this = $(this);
                     $this.removeClass(showClass);
-                    $this.find($dropdownToggle).attr('aria-expanded', 'false');
-                    $this.find($dropdownMenu).removeClass(showClass);
+                    $this.find(dropdownToggle).attr('aria-expanded', 'false');
+                    $this.find(dropdownMenu).removeClass(showClass);
                 }
             );
+        } else {
+            dropdown.off('mouseenter mouseleave');
         }
     });
 });
