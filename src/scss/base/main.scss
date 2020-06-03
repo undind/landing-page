@@ -49,9 +49,109 @@ li {
 
 .wrapper {
     padding-top: 80px;
+    position: relative;
+    overflow-x: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 section {
     padding-top: 40px;
     padding-bottom: 40px;
+
+    @include media-breakpoint-down(vxs) {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    &.section__slider {
+        padding-bottom: 0;
+    }
+
+    &.section__colored {
+        background-color: $white;
+    }
+
+    .section__title {
+        text-align: center;
+        font-size: 36px;
+        margin-bottom: 24px;
+        font-weight: bold;
+    }
+
+    .section__list {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .list__item {
+            width: 33.33333333%;
+            padding: 0 16px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 16px;
+
+            @include media-breakpoint-down(md) {
+                width: 50%;
+                flex-basis: 50%;
+            }
+
+            @include media-breakpoint-down(vxs) {
+                width: 100%;
+                flex-basis: 100%;
+                padding: 0;
+            }
+
+            .item__title {
+                font-size: 24px;
+                color: $black;
+                font-weight: bold;
+                margin-bottom: 18px;
+            }
+
+            .item__desc {
+                text-align: center;
+                color: $grey;
+                margin-bottom: 12px;
+            }
+        }
+    }
+}
+
+.app-link {
+    color: $primary;
+    transition: opacity 0.25s ease-in;
+
+    &:hover {
+        color: $primary;
+        opacity: 0.7;
+        text-decoration: none;
+    }
+}
+
+.app-button {
+    padding: 8px;
+    border-radius: 0;
+    background: none;
+    color: $primary;
+    border: 2px solid $primary;
+    transition: all 0.25s;
+
+    &:focus,
+    &:hover {
+        color: $light-grey;
+        box-shadow: inset 7.5em 0 0 0 $primary;
+    }
 }
