@@ -6,6 +6,34 @@
     display: flex;
     align-items: center;
 
+    .widget__bvi {
+        position: absolute;
+        left: 50%;
+        top: 100%;
+        transform: translateX(-50%);
+        background-color: $white;
+        box-shadow: 0 2px 4px 0 rgba(3, 33, 40, 0.04);
+        border: 1px solid $light-grey;
+        border-top: 0;
+        border-radius: 0 0 4px 4px;
+        padding: 2px 6px;
+
+        @include media-breakpoint-down(vxs) {
+            display: none;
+        }
+
+        .bvi__link {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            svg {
+                fill: $primary;
+                margin-right: 12px;
+            }
+        }
+    }
+
     .navbar-brand {
         padding: 0;
     }

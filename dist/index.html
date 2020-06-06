@@ -88,6 +88,14 @@
           </ul>
         </div>
       </div>
+      <div class="widget__bvi">
+        <a href="#" class="bvi__link app-link">
+          <svg height="32" width="32">
+            <use xlink:href="./assets/img/svg/sprite.svg#bvi" />
+          </svg>
+          Версия для слабовидящих
+        </a>
+      </div>
     </nav>
 
     <nav id="navbar-responsive" class="navbar-responsive animated">
@@ -181,9 +189,13 @@
           <li data-target="#carousel-slider" data-slide-to="0" class="active"></li>
           <li data-target="#carousel-slider" data-slide-to="1"></li>
           <li data-target="#carousel-slider" data-slide-to="2"></li>
+          <li data-target="#carousel-slider" data-slide-to="3"></li>
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
+            <img src="./assets/img/slider/koronavirus-new.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
             <img src="./assets/img/slider/1.jpg" class="d-block w-100" alt="..." />
             <div class="carousel-caption d-none d-md-block">
               <h5>First slide label</h5>
@@ -213,6 +225,70 @@
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
         </a>
+      </div>
+    </section>
+
+    <section class="section__warning section__colored">
+      <div class="container-lg">
+        <h3 class="section__title">Уважаемые пациенты!</h3>
+        <div class="section__text">
+          В связи с карантином
+          <u>плановый прием больных в консультативной поликлинике временно приостановлен</u>.
+          <br />
+          При необходимости возможны дистанционные консультации врачей гастроэнтеролога, нефролога,
+          кардиолога.
+          <br />Обращайтесь на сайт или по телефону регистратуры 65-78-90. Оставляйте свои
+          контактные данные, мы с Вами свяжемся.
+          <br />
+          Будьте здоровы!
+        </div>
+      </div>
+    </section>
+
+    <section class="section__directions">
+      <div class="container-lg">
+        <h3 class="section__title">Новости</h3>
+        <ul class="section__list">
+          <li class="list__item">
+            <div class="item__title text-center">
+              1 июня в Севастополе отметили Международный день защиты детей
+            </div>
+            <div class="item__desc">
+              ГБУЗС “Городская больница №5 – Центр охраны здоровья матери и ребенка” под руководством
+              главного врача Елены Большаковой присоединились ко всеобщему празднованию Международного
+              дня защиты детей. 1 июня детей и...
+            </div>
+            <a href="#" role="button" class="btn app-button">Подробнее</a>
+          </li>
+          <li class="list__item">
+            <div class="item__title text-center">
+              Совместные выездные приемы граждан прокуратурой района
+            </div>
+            <div class="item__desc">
+              график совместного выездного приема граждан прокуратурой района Дата и время Место
+              проведения выездного (совместного) приема Прием проводит 26.05.2020 c 14:00 до 15:00
+              ГБУЗС “Городская больница №1 им. Н.И. Пирогова”(ул....
+            </div>
+            <a href="#" role="button" class="btn app-button">Подробнее</a>
+          </li>
+          <li class="list__item">
+            <div class="item__title text-center">
+              Перспективы развития детской паллиативной помощи в Севастополе
+            </div>
+            <div class="item__desc">
+              Руководство городской больницы № 5 и представители АНО «Паллиативный центр «София»
+              рассматривают вопрос о создании в Севастополе детской выездной паллиативной службы. Об
+              этом шла речь в ходе совещания при...
+            </div>
+            <a href="#" role="button" class="btn app-button">Подробнее</a>
+          </li>
+        </ul>
+
+        <div class="app__container">
+          <div class="section__img">
+            <img src="./assets/img/slider/plan-gospit-ksmk.jpg" class="d-block w-100" alt="..." />
+          </div>
+        </div>
       </div>
     </section>
 
@@ -251,7 +327,84 @@
       </div>
     </section>
 
-    <section class="section__info">
+    <section class="section__important">
+      <div class="container-lg">
+        <div class="accordion" id="accordion">
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h2 class="mb-0">
+                <button class="btn btn-link app-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Территориальный фонд обязательного медицинского страхования города Севастополя
+                </button>
+              </h2>
+            </div>
+
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+              <div class="card-body">
+                Адрес: Фиолентовское шоссе 1/2 Телефон "Контакт-Центра" (8692)24 13 49 8 800 250 35
+                27
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h2 class="mb-0">
+                <button class="btn btn-link app-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Приём обращений граждан Департаментом здравоохранения города Севастополя
+                </button>
+              </h2>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+              <div class="card-body">
+                по адресу: ул. Карантинная, 45, с ПН. по ПТ. с 10:00 до 17:00, перерыв с 13:00 до
+                14:00. Телефон «горячей линии» для приема обращений: 8 (800) 5-800-800 с мобильных;
+                8 (800) 5-800-800 со стационарных телефонов. ежедневно с 8:00 до 17:00 звонок
+                бесплатный
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h2 class="mb-0">
+                <button class="btn btn-link app-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  В случае жестокого обращения в отношении несовершеннолетних
+                </button>
+              </h2>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+              <div class="card-body">
+                в том числе действий сексуального характера, обращайтесь по "телефону доверия"
+                8-800-2000-122
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header" id="headingFour">
+              <h2 class="mb-0">
+                <button class="btn btn-link app-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  Территориальный орган Росздравнадзора по Республике Крым и городу федерального
+                  значения Севастополю
+                </button>
+              </h2>
+            </div>
+            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+              <div class="card-body">
+                Телефон «горячей линии» для приема обращений: +7 (3652) 60-16-86 (со стационарных
+                телефонов) +7 (978) 920-10-80 (с мобильных телефонов) Режим работы: с 9:00 до 18:00
+                ежедневно.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="important__img">
+          <img src="./assets/img/slider/list-no-terror.jpg" class="d-block w-100" alt="..." />
+        </div>
+      </div>
+    </section>
+
+    <section class="section__info section__colored">
       <div class="container-lg">
         <div class="row mx-auto my-auto">
           <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">

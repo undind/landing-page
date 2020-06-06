@@ -15380,7 +15380,7 @@ li {
 }
 
 .wrapper {
-  padding-top: 80px;
+  padding-top: 120px;
   position: relative;
   overflow-x: hidden;
   display: -webkit-box;
@@ -15408,6 +15408,15 @@ section {
   }
 }
 
+section .app__container {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+section .app__container .section__img {
+  margin-top: 24px;
+}
+
 section.section__slider {
   padding-bottom: 0;
 }
@@ -15421,6 +15430,11 @@ section .section__title {
   font-size: 36px;
   margin-bottom: 24px;
   font-weight: bold;
+}
+
+section .section__text {
+  text-align: center;
+  color: #6a858a;
 }
 
 section .section__list {
@@ -15498,6 +15512,12 @@ section .section__list .list__item .item__desc {
   text-decoration: none;
 }
 
+.app-link:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  text-decoration: none;
+}
+
 .app-button {
   padding: 8px;
   border-radius: 0;
@@ -15512,6 +15532,35 @@ section .section__list .list__item .item__desc {
   color: #dbe1e2;
   -webkit-box-shadow: inset 7.5em 0 0 0 #057389;
   box-shadow: inset 7.5em 0 0 0 #057389;
+}
+
+.section__warning .section__text {
+  position: relative;
+  padding: 0 18px;
+}
+
+.section__warning .section__text::after {
+  content: '';
+  height: 100%;
+  width: 2px;
+  left: 0;
+  top: 0;
+  background-color: #dc3545;
+  position: absolute;
+}
+
+.section__warning .section__text::before {
+  content: '';
+  height: 100%;
+  width: 2px;
+  right: 0;
+  top: 0;
+  background-color: #dc3545;
+  position: absolute;
+}
+
+.section__important .accordion {
+  margin-bottom: 24px;
 }
 
 .animated {
@@ -15579,6 +15628,44 @@ section .section__list .list__item .item__desc {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+.navbar .widget__bvi {
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-color: #fff;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(3, 33, 40, 0.04);
+  box-shadow: 0 2px 4px 0 rgba(3, 33, 40, 0.04);
+  border: 1px solid #dbe1e2;
+  border-top: 0;
+  border-radius: 0 0 4px 4px;
+  padding: 2px 6px;
+}
+
+@media (max-width: 575.98px) {
+  .navbar .widget__bvi {
+    display: none;
+  }
+}
+
+.navbar .widget__bvi .bvi__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.navbar .widget__bvi .bvi__link svg {
+  fill: #057389;
+  margin-right: 12px;
 }
 
 .navbar .navbar-brand {

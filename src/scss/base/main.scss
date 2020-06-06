@@ -48,7 +48,7 @@ li {
 }
 
 .wrapper {
-    padding-top: 80px;
+    padding-top: 120px;
     position: relative;
     overflow-x: hidden;
     display: -webkit-box;
@@ -73,6 +73,15 @@ section {
         padding-bottom: 20px;
     }
 
+    .app__container {
+        max-width: 640px;
+        margin: 0 auto;
+
+        .section__img {
+            margin-top: 24px;
+        }
+    }
+
     &.section__slider {
         padding-bottom: 0;
     }
@@ -86,6 +95,11 @@ section {
         font-size: 36px;
         margin-bottom: 24px;
         font-weight: bold;
+    }
+
+    .section__text {
+        text-align: center;
+        color: $grey;
     }
 
     .section__list {
@@ -139,6 +153,11 @@ section {
         opacity: 0.7;
         text-decoration: none;
     }
+
+    &:focus {
+        box-shadow: none;
+        text-decoration: none;
+    }
 }
 
 .app-button {
@@ -153,5 +172,38 @@ section {
     &:hover {
         color: $light-grey;
         box-shadow: inset 7.5em 0 0 0 $primary;
+    }
+}
+
+.section__warning {
+    .section__text {
+        position: relative;
+        padding: 0 18px;
+
+        &::after {
+            content: '';
+            height: 100%;
+            width: 2px;
+            left: 0;
+            top: 0;
+            background-color: #dc3545;
+            position: absolute;
+        }
+
+        &::before {
+            content: '';
+            height: 100%;
+            width: 2px;
+            right: 0;
+            top: 0;
+            background-color: #dc3545;
+            position: absolute;
+        }
+    }
+}
+
+.section__important {
+    .accordion {
+        margin-bottom: 24px;
     }
 }
