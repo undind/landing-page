@@ -1,0 +1,118 @@
+@media (max-width: 768px) {
+    .section__info .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .section__info .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+}
+
+.section__info .carousel-inner .carousel-item.active,
+.section__info .carousel-inner .carousel-item-next,
+.section__info .carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+/* display 3 */
+@media (min-width: 768px) {
+    .section__info .carousel-inner .carousel-item-right.active,
+    .section__info .carousel-inner .carousel-item-next {
+        transform: translateX(33.333%);
+    }
+
+    .section__info .carousel-inner .carousel-item-left.active,
+    .section__info .carousel-inner .carousel-item-prev {
+        transform: translateX(-33.333%);
+    }
+}
+
+.section__info .carousel-inner .carousel-item-right,
+.section__info .carousel-inner .carousel-item-left {
+    transform: translateX(0);
+}
+
+.section__info {
+    .carousel-control-prev {
+        transform: rotate(180deg);
+        left: -8px;
+
+        svg {
+            fill: $primary;
+        }
+    }
+
+    .carousel-control-next {
+        right: -8px;
+
+        svg {
+            fill: $primary;
+        }
+    }
+
+    .carousel-item {
+        .card.card-body {
+            height: 220px;
+
+            .card__link {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                height: 100%;
+                transition: all 0.25s ease;
+                border-radius: 4px;
+
+                img {
+                    width: 70px;
+                }
+
+                .card-text {
+                    margin-top: 12px;
+                    color: $black;
+                }
+
+                &:hover {
+                    text-decoration: none;
+                    background-color: $light-grey;
+                }
+            }
+        }
+    }
+
+    .info__quality {
+        max-width: 400px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 36px;
+        box-shadow: inset 0px 0px 12px 6px #d3d2d2;
+        padding: 12px;
+
+        @include media-breakpoint-down(vxs) {
+            flex-direction: column;
+        }
+
+        .quality__content {
+            text-align: center;
+
+            .content__text {
+                margin-bottom: 18px;
+            }
+        }
+
+        .quality__img {
+            margin-right: 12px;
+
+            img {
+                width: 170px;
+                height: 80px;
+
+                @include media-breakpoint-down(vxs) {
+                    width: 80px;
+                    height: 70px;
+                }
+            }
+        }
+    }
+}
