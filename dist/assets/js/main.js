@@ -1,4 +1,6 @@
 $(document).ready(function () {
+    AOS.init();
+
     var hamburgerMenu = $('#navbar-responsive');
     var hamburgerButton = $('#navbar-button');
     var navbarBackdrop = $('.navbar-backdrop');
